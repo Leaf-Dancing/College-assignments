@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>成绩管理</title>
+    <title>成绩系统管理</title>
     <link href="/static/components.css" rel="stylesheet" />
     <link href="/static/base.css" rel="stylesheet" />
     {% block styles %}{% endblock%}
@@ -17,6 +17,7 @@
             <ul>
                 <li {% if location.pathname.startswith("/student") %}active{% endif %}><a href="/student">学生</a></li>
                 <li {% if location.pathname.startswith("/course") %}active{% endif %}><a href="/course">课程</a></li>
+                <li {% if location.pathname.startswith("/classes") %}active{% endif %}><a href="/classes">班次</a></li>
                 <li {% if location.pathname.startswith("/cousel") %}active{% endif %}><a href="/cousel">选课</a></li>
                 <li {% if location.pathname.startswith("/grade") %}active{% endif %}><a href="/grade">成绩单</a></li>
             </ul>
