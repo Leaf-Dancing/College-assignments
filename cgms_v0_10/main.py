@@ -5,5 +5,7 @@ import serv.grade_views
 import serv.grade_actions
 import serv.student_views
 import serv.course_views  
-import serv.course_selection_views  # noqa: F401
+import serv.course_selection_views
+import serv.course_selection_actions
+import serv.classes_views  # noqa: F401
 
