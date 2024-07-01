@@ -1,14 +1,27 @@
 {% extends "base.html" %}
 
-<!--  -->
 {% block styles %}
-<!-- <link href="/student_list.css" rel="stylesheet" /> -->
+<link href="/static/grade_list.css" rel="stylesheet" />
 {% endblock %}
 
-<!--  -->
+
 {% block page_content %}
 <div class="paper">
-    <h3>课程管理</h3>
-    <div>待实现...</div>
+    <table>
+        <tr>
+            <th>课程号</th>
+            <th>课程名</th>
+            <th>学分</th>
+            <th>学时</th>
+        </tr>
+        {% for item in items %}
+        <tr>
+            <td>{{ item.cou_sn }}</td>
+            <td>{{ item.cou_name }}</td>
+            <td>{{ item.cou_credit }}</td>
+            <td>{{ item.cou_credit_hour }}</td>
+        </tr>
+        {% endfor %}
+    </table>
 </div>
 {% endblock %}
